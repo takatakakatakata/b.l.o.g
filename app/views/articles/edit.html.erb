@@ -1,0 +1,16 @@
+
+<%=form_for @article do |f|%>
+<div class="row ">
+        <div class="col s10 offset-s1">
+          <div class="card darken-1 card-panel hoverable">
+            <div class="card-content ">
+              <%=f.label :title%>
+              <%=f.text_field :title%>
+              <%=f.label :text%>
+              <%=f.text_area :text ,id:"icon_prefix2" ,class:"materialize-textarea"%>
+              <%=f.submit type: "submit" ,class:"btn waves-effect waves-light"%>
+            </div>
+          </div>
+        </div>
+      </div>
+ <% end %>

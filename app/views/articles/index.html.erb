@@ -1,0 +1,6 @@
+<% @articles.each do |article|%>
+ <%=render partial: "articles/article",locals: {article: article}%>
+<% end %>
+<div class="card-panel teal lighten-2">
+ <%=paginate(@articles) %>
+</div>
