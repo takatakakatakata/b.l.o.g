@@ -1,0 +1,356 @@
+
+
+Started GET "/" for ::1 at 2018-09-15 15:04:35 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (82.5ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (19.0ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  [1m[36mUser Load (14.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (6, 5, 2)[0m
+  Rendered likes/_like.html.erb (0.6ms)
+  Rendered articles/_article.html.erb (7.7ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.6ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.3ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.2ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.2ms)
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM `articles`
+  Rendered articles/index.html.erb within layouts/application (137.8ms)
+Completed 200 OK in 1280ms (Views: 1206.4ms | ActiveRecord: 46.9ms)
+
+
+Started GET "/assets/articles-539b1b2d248fcacaf845c897cae976a6.css?body=1" for ::1 at 2018-09-15 15:04:37 +0900
+
+
+Started GET "/assets/application-daeb941118ff1901e2ca7cc8b82e4309.css?body=1" for ::1 at 2018-09-15 15:04:37 +0900
+
+
+Started GET "/assets/style-9d9ec4dd6c218ad975bf6cfe3b847b66.css?body=1" for ::1 at 2018-09-15 15:04:37 +0900
+
+
+Started GET "/app.js" for ::1 at 2018-09-15 15:04:37 +0900
+
+ActionController::RoutingError (No route matches [GET] "/app.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.9ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (142.8ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (90.0ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (208.0ms)
+
+
+Started GET "/assets/turbolinks-196df15d152615a6be5cffafd523cab3.js?body=1" for ::1 at 2018-09-15 15:04:37 +0900
+
+
+Started GET "/assets/articles-f6c6ef02137813db1b2df8e2c31983a1.js?body=1" for ::1 at 2018-09-15 15:04:37 +0900
+
+
+Started GET "/assets/application-e6077baa046467b15a20398a4293eb61.js?body=1" for ::1 at 2018-09-15 15:04:38 +0900
+
+
+Started GET "/" for ::1 at 2018-09-15 15:04:51 +0900
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  `articles`.* FROM `articles`  ORDER BY created_at DESC LIMIT 5 OFFSET 0[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT `users`.* FROM `users` WHERE `users`.`id` IN (6, 5, 2)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.9ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.6ms)
+  Rendered likes/_like.html.erb (0.2ms)
+  Rendered articles/_article.html.erb (1.8ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.5ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.4ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM `articles`[0m
+  Rendered articles/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 83ms (Views: 80.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/app.js" for ::1 at 2018-09-15 15:04:51 +0900
+
+ActionController::RoutingError (No route matches [GET] "/app.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.8ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (119.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (83.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (181.2ms)
+
+
+Started GET "/app.js" for ::1 at 2018-09-15 15:04:57 +0900
+
+ActionController::RoutingError (No route matches [GET] "/app.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (118.5ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (75.0ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (170.2ms)
+
+
+Started GET "/" for ::1 at 2018-09-15 15:04:58 +0900
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (1.9ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (6, 5, 2)[0m
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.4ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.2ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.5ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.3ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (1.2ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM `articles`
+  Rendered articles/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 65ms (Views: 61.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/app.js" for ::1 at 2018-09-15 15:04:58 +0900
+
+ActionController::RoutingError (No route matches [GET] "/app.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.9ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (107.8ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (82.6ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (195.6ms)
+
+
+Started GET "/" for ::1 at 2018-09-15 17:15:06 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.7ms)[0m  SELECT  `articles`.* FROM `articles`  ORDER BY created_at DESC LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` IN (6, 5, 2)[0m
+  Rendered likes/_like.html.erb (0.8ms)
+  Rendered articles/_article.html.erb (6.5ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (2.4ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (2.1ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (2.0ms)
+  Rendered likes/_like.html.erb (0.1ms)
+  Rendered articles/_article.html.erb (2.3ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM `articles`
+  Rendered articles/index.html.erb within layouts/application (90.3ms)
+Completed 200 OK in 252ms (Views: 215.0ms | ActiveRecord: 9.8ms)
+
+
+Started GET "/assets/articles-539b1b2d248fcacaf845c897cae976a6.css?body=1" for ::1 at 2018-09-15 17:15:06 +0900
+
+
+Started GET "/assets/style-9d9ec4dd6c218ad975bf6cfe3b847b66.css?body=1" for ::1 at 2018-09-15 17:15:06 +0900
+
+
+Started GET "/assets/likes-539b1b2d248fcacaf845c897cae976a6.css?body=1" for ::1 at 2018-09-15 17:15:06 +0900
+
+
+Started GET "/assets/application-daeb941118ff1901e2ca7cc8b82e4309.css?body=1" for ::1 at 2018-09-15 17:15:06 +0900
+
+
+Started GET "/assets/turbolinks-196df15d152615a6be5cffafd523cab3.js?body=1" for ::1 at 2018-09-15 17:15:06 +0900
+
+
+Started GET "/assets/jquery_ujs-e9c99e4aa7db66a7f23b948d7d043bd8.js?body=1" for ::1 at 2018-09-15 17:15:06 +0900
+
+
+Started GET "/assets/jquery-24e9e31ece1989ef3791bcd53ea38cab.js?body=1" for ::1 at 2018-09-15 17:15:07 +0900
+
+
+Started GET "/assets/articles-f6c6ef02137813db1b2df8e2c31983a1.js?body=1" for ::1 at 2018-09-15 17:15:07 +0900
+
+
+Started GET "/assets/likes-f6c6ef02137813db1b2df8e2c31983a1.js?body=1" for ::1 at 2018-09-15 17:15:07 +0900
+
+
+Started GET "/assets/application-e6077baa046467b15a20398a4293eb61.js?body=1" for ::1 at 2018-09-15 17:15:07 +0900
+
+
+Started GET "/app.js" for ::1 at 2018-09-15 17:15:07 +0900
+
+ActionController::RoutingError (No route matches [GET] "/app.js"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.10) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.10) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.10) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.10) lib/rack/lock.rb:17:in `call'
+  rack (1.6.10) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.10) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.6ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (153.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (109.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/hayasakatakahiro/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (253.2ms)
